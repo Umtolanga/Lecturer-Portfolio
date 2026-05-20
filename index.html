@@ -1,0 +1,585 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+  <meta charset="UTF-8"/> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+  <title>Michael Combrinck | Lecturer — Belgium Campus</title> 
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet"/> 
+
+</head> 
+
+<body> 
+
+ 
+
+<!-- ════════════════════════ NAV ════════════════════════ --> 
+
+<nav id="navbar"> 
+
+  <div class="nav-logo">MC // BELGIUM CAMPUS</div> 
+
+  <ul class="nav-links" id="nav-links"> 
+
+    <li><a href="#about">About</a></li> 
+
+    <li><a href="#modules">Modules</a></li> 
+
+    <li><a href="#funfacts">Fun Facts</a></li> 
+
+    <li><a href="#dancefloor">Dance</a></li> 
+
+    <li><a href="#quotes">Quotes</a></li> 
+
+    <li><a href="#contact">Contact</a></li> 
+
+  </ul> 
+
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0"> 
+
+    <span></span><span></span><span></span> 
+
+  </div> 
+
+</nav> 
+
+ 
+
+<!-- ════════════════════════ HERO ════════════════════════ --> 
+
+<section id="hero" aria-label="Hero banner"> 
+
+  <canvas id="particles-canvas"></canvas> 
+
+  <div class="hero-content"> 
+
+ 
+
+    <!-- HD portrait avatar --> 
+
+    <div class="avatar-wrap"> 
+
+      <div class="avatar-ring"> 
+
+        <div class="avatar-svg-wrap"> 
+
+          <svg viewBox="0 0 280 320" xmlns="http://www.w3.org/2000/svg" width="280" height="320" aria-label="Portrait of Michael Combrinck"> 
+
+            <!-- shirt --> 
+
+            <rect x="30" y="218" width="220" height="102" rx="22" fill="#1a1e50"/> 
+
+            <rect x="50" y="224" width="180" height="92" rx="16" fill="#252b72" opacity=".5"/> 
+
+            <polygon points="140,218 108,252 130,240 140,250" fill="#0d1122"/> 
+
+            <polygon points="140,218 172,252 150,240 140,250" fill="#0d1122"/> 
+
+            <polygon points="140,242 132,290 140,284 148,290" fill="#00c8ff" opacity=".9"/> 
+
+            <polygon points="126,238 134,228 140,242 146,228 154,238 140,252" fill="#0099bb"/> 
+
+            <rect x="168" y="236" width="18" height="14" rx="4" fill="none" stroke="#a020f0" stroke-width="1.5" opacity=".6"/> 
+
+            <rect x="170" y="238" width="14" height="10" rx="2" fill="#a020f0" opacity=".25"/> 
+
+            <path d="M58 260 H82 V280 H102" stroke="#00c8ff" stroke-width="1.3" fill="none" opacity=".35" stroke-linecap="round" stroke-linejoin="round"/> 
+
+            <circle cx="102" cy="280" r="3.5" fill="#00c8ff" opacity=".5"/> 
+
+            <path d="M222 260 H198 V280 H178" stroke="#a020f0" stroke-width="1.3" fill="none" opacity=".35" stroke-linecap="round" stroke-linejoin="round"/> 
+
+            <circle cx="178" cy="280" r="3.5" fill="#a020f0" opacity=".5"/> 
+
+            <!-- neck --> 
+
+            <rect x="124" y="194" width="32" height="32" rx="12" fill="#e8b88a"/> 
+
+            <rect x="124" y="194" width="32" height="10" rx="8" fill="rgba(0,0,0,.1)"/> 
+
+            <!-- head --> 
+
+            <ellipse cx="140" cy="150" rx="68" ry="74" fill="#f5c9a0"/> 
+
+            <ellipse cx="96" cy="156" rx="20" ry="28" fill="rgba(200,130,80,.1)"/> 
+
+            <ellipse cx="184" cy="156" rx="20" ry="28" fill="rgba(200,130,80,.1)"/> 
+
+            <ellipse cx="140" cy="108" rx="36" ry="18" fill="rgba(255,230,200,.16)"/> 
+
+            <!-- hair --> 
+
+            <ellipse cx="140" cy="90" rx="68" ry="34" fill="#1c0d02"/> 
+
+            <rect x="72" y="90" width="136" height="28" fill="#1c0d02"/> 
+
+            <path d="M72,108 Q74,66 140,60 Q206,66 208,108 L208,93 Q200,54 140,50 Q80,54 72,93 Z" fill="#2a1405"/> 
+
+            <ellipse cx="140" cy="94" rx="58" ry="20" fill="#2a1405" opacity=".7"/> 
+
+            <rect x="72" y="102" width="12" height="38" rx="5" fill="#1c0d02"/> 
+
+            <rect x="196" y="102" width="12" height="38" rx="5" fill="#1c0d02"/> 
+
+            <!-- ears --> 
+
+            <ellipse cx="73" cy="153" rx="11" ry="15" fill="#e8b88a"/> 
+
+            <ellipse cx="74" cy="153" rx="7" ry="10" fill="#d9a47a"/> 
+
+            <ellipse cx="207" cy="153" rx="11" ry="15" fill="#e8b88a"/> 
+
+            <ellipse cx="206" cy="153" rx="7" ry="10" fill="#d9a47a"/> 
+
+            <!-- eyes --> 
+
+            <ellipse cx="115" cy="146" rx="14" ry="15" fill="#fff"/> 
+
+            <ellipse cx="116" cy="148" rx="10" ry="11" fill="#3b2010"/> 
+
+            <ellipse cx="117" cy="149" rx="5.5" ry="6" fill="#0a0500"/> 
+
+            <ellipse cx="119" cy="146" rx="3" ry="3" fill="#fff" opacity=".9"/> 
+
+            <ellipse cx="114" cy="151" rx="1.5" ry="1.5" fill="#fff" opacity=".4"/> 
+
+            <ellipse cx="165" cy="146" rx="14" ry="15" fill="#fff"/> 
+
+            <ellipse cx="164" cy="148" rx="10" ry="11" fill="#3b2010"/> 
+
+            <ellipse cx="163" cy="149" rx="5.5" ry="6" fill="#0a0500"/> 
+
+            <ellipse cx="169" cy="146" rx="3" ry="3" fill="#fff" opacity=".9"/> 
+
+            <ellipse cx="164" cy="151" rx="1.5" ry="1.5" fill="#fff" opacity=".4"/> 
+
+            <!-- brows --> 
+
+            <path d="M100 129 Q115 120 130 125" stroke="#1c0d02" stroke-width="4" fill="none" stroke-linecap="round"/> 
+
+            <path d="M150 125 Q165 120 180 129" stroke="#1c0d02" stroke-width="4" fill="none" stroke-linecap="round"/> 
+
+            <!-- nose --> 
+
+            <path d="M136 156 L132 174 Q140 180 148 174 L144 156" fill="#e0a87a"/> 
+
+            <ellipse cx="140" cy="176" rx="9" ry="6" fill="#d9a070"/> 
+
+            <ellipse cx="133" cy="177" rx="4" ry="3" fill="#c08060" opacity=".55"/> 
+
+            <ellipse cx="147" cy="177" rx="4" ry="3" fill="#c08060" opacity=".55"/> 
+
+            <!-- mouth --> 
+
+            <path d="M118 195 Q130 205 140 202 Q150 205 162 195" fill="#c87050"/> 
+
+            <path d="M118 195 Q130 190 140 192 Q150 190 162 195" fill="#e08060"/> 
+
+            <path d="M116 186 Q112 194 115 202" stroke="#c08060" stroke-width="1.5" fill="none" opacity=".35" stroke-linecap="round"/> 
+
+            <path d="M164 186 Q168 194 165 202" stroke="#c08060" stroke-width="1.5" fill="none" opacity=".35" stroke-linecap="round"/> 
+
+            <!-- beard --> 
+
+            <ellipse cx="140" cy="204" rx="38" ry="14" fill="#1c0d02" opacity=".28"/> 
+
+            <path d="M120 206 Q140 220 160 206" fill="#1c0d02" opacity=".22"/> 
+
+            <!-- glasses --> 
+
+            <rect x="97" y="135" width="34" height="25" rx="9" fill="rgba(0,200,255,.06)" stroke="#00c8ff" stroke-width="2.5"/> 
+
+            <rect x="149" y="135" width="34" height="25" rx="9" fill="rgba(0,200,255,.06)" stroke="#00c8ff" stroke-width="2.5"/> 
+
+            <line x1="131" y1="148" x2="149" y2="148" stroke="#00c8ff" stroke-width="2.5"/> 
+
+            <line x1="97" y1="147" x2="78" y2="151" stroke="#00c8ff" stroke-width="2" opacity=".8"/> 
+
+            <line x1="183" y1="147" x2="202" y2="151" stroke="#00c8ff" stroke-width="2" opacity=".8"/> 
+
+            <ellipse cx="108" cy="141" rx="6" ry="4" fill="rgba(255,255,255,.12)" transform="rotate(-20,108,141)"/> 
+
+            <ellipse cx="160" cy="141" rx="6" ry="4" fill="rgba(255,255,255,.12)" transform="rotate(-20,160,141)"/> 
+
+          </svg> 
+
+        </div> 
+
+      </div> 
+
+    </div> 
+
+ 
+
+    <!-- Text --> 
+
+    <div class="hero-text"> 
+
+      <div class="hero-badge"><div class="badge-dot"></div>Belgium Campus · Lecturer</div> 
+
+      <h1 class="hero-name">Michael<span>Combrinck</span></h1> 
+
+      <p id="typing-text"><span class="cursor"></span></p> 
+
+      <p class="hero-phrase">"Practice, Practice, Practice"</p> 
+
+      <div class="hero-cta"> 
+
+        <a href="#about"><button class="btn-primary">Explore Profile</button></a> 
+
+        <a href="#dancefloor"><button class="btn-ghost">🕺 See Him Dance</button></a> 
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+  <div class="scroll-hint"><div class="scroll-line"></div>SCROLL</div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ ABOUT ════════════════════════ --> 
+
+<section id="about" aria-labelledby="about-title"> 
+
+  <div class="section-inner"> 
+
+    <p class="section-tag reveal">// About</p> 
+
+    <h2 class="section-title reveal" id="about-title">Who Is <em>Michael?</em></h2> 
+
+    <div class="section-divider reveal"></div> 
+
+    <div class="about-grid"> 
+
+      <div class="glow-card reveal"> 
+
+        <h3><div class="icon-circle">👨‍💻</div>Biography</h3> 
+
+        <p>Michael Combrinck began his career in the tech industry, building real-world experience before following his true calling into education. With a passion for people and a drive to see students genuinely succeed, he joined Belgium Campus as a full-time lecturer.</p> 
+
+        <br/><p>His teaching philosophy is simple but powerful: understanding beats memorization every single time. He pushes students to think critically, build real projects, and develop the habits that actually get them hired.</p> 
+
+      </div> 
+
+      <div class="glow-card reveal" style="transition-delay:.1s"> 
+
+        <h3><div class="icon-circle">💡</div>Teaching Philosophy</h3> 
+
+        <p style="margin-bottom:1rem">Michael believes that rote learning produces fragile knowledge. His mission is to build genuine conceptual understanding — because a developer who truly <em>gets</em> why something works will always outperform one who only memorised how.</p> 
+
+        <div class="skills-row"><span class="skill-pill">Communication</span><span class="skill-pill">Problem-Solving</span><span class="skill-pill">Industry Experience</span><span class="skill-pill">Mentorship</span></div> 
+
+      </div> 
+
+      <div class="glow-card reveal" style="transition-delay:.15s"> 
+
+        <h3><div class="icon-circle">🎓</div>Teaching Methods</h3> 
+
+        <ul class="teaching-list"> 
+
+          <li>Direct explanation</li><li>Demonstration method</li> 
+
+          <li>Discussion-based learning</li><li>Project-based learning</li><li>Inquiry-based learning</li> 
+
+        </ul> 
+
+      </div> 
+
+      <div class="glow-card reveal" style="transition-delay:.2s"> 
+
+        <h3><div class="icon-circle">🚀</div>What Employers Look For</h3> 
+
+        <p style="margin-bottom:1rem">Strong Git repositories filled with actual working projects and meaningful improvements based on feedback — not empty repos or assignments never touched again.</p> 
+
+        <h3 style="margin-top:1rem"><div class="icon-circle">📌</div>Advice to Students</h3> 
+
+        <div class="skills-row"><span class="skill-pill">Consistency</span><span class="skill-pill">Motivation</span><span class="skill-pill">Practice</span><span class="skill-pill">Focus</span></div> 
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ MODULES ════════════════════════ --> 
+
+<section id="modules" aria-labelledby="modules-title"> 
+
+  <div class="section-inner"> 
+
+    <p class="section-tag reveal">// Expertise</p> 
+
+    <h2 class="section-title reveal" id="modules-title">Modules & <em>Specialisations</em></h2> 
+
+    <div class="section-divider reveal"></div> 
+
+    <p class="reveal" style="color:var(--text-muted);margin-bottom:2rem;font-size:.9rem">Hover or tap a card to reveal more</p> 
+
+    <div class="modules-grid"> 
+
+      <div class="flip-card reveal" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">💻</div><h4>Programming Fundamentals</h4><p>Core concepts every dev must master</p></div><div class="flip-back"><h4>What you'll learn</h4><p>Variables, data types, control flow, functions, and the logic that underpins all software development.</p></div></div></div> 
+
+      <div class="flip-card reveal" style="transition-delay:.08s" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">🌐</div><h4>Web Development</h4><p>Building for the modern web</p></div><div class="flip-back"><h4>Skills covered</h4><p>HTML, CSS, JavaScript, responsive design, and creating polished functional web applications from scratch.</p></div></div></div> 
+
+      <div class="flip-card reveal" style="transition-delay:.16s" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">🔀</div><h4>Version Control</h4><p>Git best practices for employability</p></div><div class="flip-back"><h4>Why it matters</h4><p>Employers scan your Git repo first. Learn commits, branching, pull requests, and maintaining a portfolio employers want to see.</p></div></div></div> 
+
+      <div class="flip-card reveal" style="transition-delay:.24s" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">🧩</div><h4>Problem Solving</h4><p>Breaking down complexity</p></div><div class="flip-back"><h4>The mindset</h4><p>Decomposing hard problems, writing clean algorithms, and debugging with intention — skills that set senior developers apart.</p></div></div></div> 
+
+      <div class="flip-card reveal" style="transition-delay:.32s" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">🏗️</div><h4>Project-Based Learning</h4><p>Build to understand</p></div><div class="flip-back"><h4>The approach</h4><p>Real projects, real feedback, real growth. Theory only sticks when applied to something you care about finishing.</p></div></div></div> 
+
+      <div class="flip-card reveal" style="transition-delay:.4s" tabindex="0" role="button"><div class="flip-card-inner"><div class="flip-front"><div class="flip-icon">🏆</div><h4>Industry Readiness</h4><p>From student to professional</p></div><div class="flip-back"><h4>The outcome</h4><p>CV-ready projects, strong communication habits, and the professional mindset needed to thrive on day one.</p></div></div></div> 
+
+    </div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ FUN FACTS ════════════════════════ --> 
+
+<section id="funfacts" aria-labelledby="funfacts-title"> 
+
+  <div class="section-inner"> 
+
+    <p class="section-tag reveal">// Superpowers</p> 
+
+    <h2 class="section-title reveal" id="funfacts-title">Fun Facts & <em>Character</em></h2> 
+
+    <div class="section-divider reveal"></div> 
+
+    <div class="facts-grid"> 
+
+      <div class="fact-card reveal" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">🔥</span><div class="fact-label">Passion Level</div><div class="fact-reveal">Students consistently describe Michael as one of the most passionate lecturers they've ever had — you can feel the energy when he teaches.</div><div class="fact-hint">Click to reveal</div></div> 
+
+      <div class="fact-card reveal" style="transition-delay:.08s" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">⛪</span><div class="fact-label">Alternate Universe</div><div class="fact-reveal">If Michael had not become a lecturer, he would have pursued a life as a Pastor or Preacher — the same calling to guide and inspire, a different stage.</div><div class="fact-hint">Click to reveal</div></div> 
+
+      <div class="fact-card reveal" style="transition-delay:.16s" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">💼</span><div class="fact-label">Industry First</div><div class="fact-reveal">Before lecturing, Michael worked in industry on purpose — so that everything he teaches comes from real experience, not just theory.</div><div class="fact-hint">Click to reveal</div></div> 
+
+      <div class="fact-card reveal" style="transition-delay:.24s" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">🤝</span><div class="fact-label">How Students See Him</div><div class="fact-reveal">Passionate. Hardworking. Gentle. Three words that come up again and again when students describe their experience in his class.</div><div class="fact-hint">Click to reveal</div></div> 
+
+      <div class="fact-card reveal" style="transition-delay:.32s" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">🎯</span><div class="fact-label">Secret Superpower</div><div class="fact-reveal">Making difficult concepts feel obvious. Michael has an uncanny ability to find the exact analogy that makes the penny drop for any student.</div><div class="fact-hint">Click to reveal</div></div> 
+
+      <div class="fact-card reveal" style="transition-delay:.4s" tabindex="0" role="button" aria-expanded="false"><span class="fact-emoji">🔁</span><div class="fact-label">The Golden Rule</div><div class="fact-reveal">"Practice, Practice, Practice." His favourite phrase — because repetition is how skills become instinct.</div><div class="fact-hint">Click to reveal</div></div> 
+
+    </div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ DANCE FLOOR ════════════════════════ --> 
+
+<section id="dancefloor" aria-labelledby="df-title"> 
+
+  <div class="df-grid-bg"></div> 
+
+  <div class="df-spot df-spot-1"></div> 
+
+  <div class="df-spot df-spot-2"></div> 
+
+  <div class="df-spot df-spot-3"></div> 
+
+  <div class="disco-wire"></div> 
+
+  <div class="disco-ball" id="disco-ball"></div> 
+
+  <div class="disco-floor-tiles" id="disco-tiles"></div> 
+
+ 
+
+  <div class="section-inner" style="position:relative;z-index:10"> 
+
+    <p class="section-tag reveal" style="text-align:center">// Dance Floor</p> 
+
+    <h2 class="section-title reveal" id="df-title" style="text-align:center">Michael's <em>Moves</em></h2> 
+
+    <div class="section-divider reveal" style="margin-left:auto;margin-right:auto"></div> 
+
+    <div class="dance-stage"> 
+
+      <div class="df-label" id="df-label">😎 IDLE — Vibing Between Lectures</div> 
+
+      <canvas id="dancer-canvas" width="220" height="460" aria-label="Dancing character of Michael Combrinck"></canvas> 
+
+      <div class="dance-btns" role="toolbar"> 
+
+        <button class="d-btn active" data-dance="idle"     data-label="😎 IDLE — Vibing Between Lectures">😎 Idle</button> 
+
+        <button class="d-btn"        data-dance="robot"    data-label="🤖 ROBOT — Mechanical Precision">🤖 Robot</button> 
+
+        <button class="d-btn"        data-dance="floss"    data-label="💃 FLOSS — Arms Flying Wild">💃 Floss</button> 
+
+        <button class="d-btn"        data-dance="wave"     data-label="🌊 WAVE — Smooth Body Roll">🌊 Wave</button> 
+
+        <button class="d-btn"        data-dance="moonwalk" data-label="🌕 MOONWALK — Sliding Back">🌕 Moonwalk</button> 
+
+        <button class="d-btn"        data-dance="salsa"    data-label="🌶️ SALSA — Hip Fire">🌶️ Salsa</button> 
+
+        <button class="d-btn"        data-dance="jump"     data-label="⬆️ JUMP — Big Air Energy">⬆️ Jump</button> 
+
+        <button class="d-btn"        data-dance="headbang" data-label="🎸 HEADBANG — Full Send">🎸 Headbang</button> 
+
+      </div> 
+
+      <div class="spd-row"> 
+
+        <span>SPEED</span> 
+
+        <input type="range" id="df-spd" min="0.2" max="3" step="0.1" value="1" aria-label="Dance speed"/> 
+
+        <span id="df-spd-val">1.0×</span> 
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ QUOTES ════════════════════════ --> 
+
+<section id="quotes" aria-labelledby="quotes-title"> 
+
+  <div class="section-inner"> 
+
+    <p class="section-tag reveal" style="text-align:center">// Words of Wisdom</p> 
+
+    <h2 class="section-title reveal" id="quotes-title" style="text-align:center">Quote <em>Wall</em></h2> 
+
+    <div class="section-divider reveal" style="margin-left:auto;margin-right:auto"></div> 
+
+    <div class="quote-stage reveal"> 
+
+      <div class="quote-mark">"</div> 
+
+      <div class="quote-item active"><p class="quote-text">Practice, Practice, Practice</p><span class="quote-author">— Michael Combrinck</span></div> 
+
+      <div class="quote-item"><p class="quote-text">Understanding a concept is a thousand times more valuable than memorising it.</p><span class="quote-author">— Michael Combrinck</span></div> 
+
+      <div class="quote-item"><p class="quote-text">Consistency separates the developers who get hired from those who almost get hired.</p><span class="quote-author">— Michael Combrinck</span></div> 
+
+      <div class="quote-item"><p class="quote-text">Your Git repo is your portfolio. Make sure it tells the story of someone who never stopped improving.</p><span class="quote-author">— Michael Combrinck</span></div> 
+
+      <div class="quote-item"><p class="quote-text">I didn't come from a textbook — I came from industry. Everything I teach, I've lived.</p><span class="quote-author">— Michael Combrinck</span></div> 
+
+    </div> 
+
+    <div class="quote-dots reveal" id="quote-dots"></div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ CONTACT ════════════════════════ --> 
+
+<section id="contact" aria-labelledby="contact-title"> 
+
+  <div class="section-inner"> 
+
+    <p class="section-tag reveal">// Connect</p> 
+
+    <h2 class="section-title reveal" id="contact-title">Get In <em>Touch</em></h2> 
+
+    <div class="section-divider reveal"></div> 
+
+    <div class="contact-grid"> 
+
+      <div class="contact-card reveal"> 
+
+        <h3>📍 Contact Information</h3> 
+
+        <div class="contact-row"><div class="contact-icon">🏛️</div><div><strong style="color:var(--text-primary);display:block">Belgium Campus</strong>Pretoria, South Africa</div></div> 
+
+        <div class="contact-row"><div class="contact-icon">📧</div><div><strong style="color:var(--text-primary);display:block">Email</strong>michael.combrinck@belgiumcampus.ac.za</div></div> 
+
+        <div class="contact-row"><div class="contact-icon">🌐</div><div><strong style="color:var(--text-primary);display:block">Campus</strong>www.belgiumcampus.ac.za</div></div> 
+
+        <div class="contact-row"><div class="contact-icon">💻</div><div><strong style="color:var(--text-primary);display:block">GitHub</strong>Keep your repos active — he's watching 👀</div></div> 
+
+      </div> 
+
+      <div class="contact-card reveal" style="transition-delay:.1s"> 
+
+        <h3>🕐 Office Hours</h3> 
+
+        <p style="color:var(--text-muted);font-size:.85rem;margin-bottom:1.2rem">Drop by during consultation hours or book via the student portal.</p> 
+
+        <div class="oh-grid"> 
+
+          <div class="oh-item"><strong>Monday</strong>10:00 – 12:00</div> 
+
+          <div class="oh-item"><strong>Tuesday</strong>13:00 – 15:00</div> 
+
+          <div class="oh-item"><strong>Wednesday</strong>09:00 – 11:00</div> 
+
+          <div class="oh-item"><strong>Thursday</strong>14:00 – 16:00</div> 
+
+          <div class="oh-item"><strong>Friday</strong>10:00 – 12:00</div> 
+
+          <div class="oh-item" style="background:rgba(123,47,255,.1);border-color:rgba(123,47,255,.2)"><strong style="color:var(--accent-violet)">Online</strong>By appointment</div> 
+
+        </div> 
+
+      </div> 
+
+    </div> 
+
+    <div class="cta-wrap reveal"> 
+
+      <a href="mailto:michael.combrinck@belgiumcampus.ac.za"><button class="btn-cta-large">⚡ Send a Message</button></a> 
+
+      <p class="cta-sub">He responds. He cares. He'll help you grow.</p> 
+
+    </div> 
+
+  </div> 
+
+</section> 
+
+ 
+
+<!-- ════════════════════════ FOOTER ════════════════════════ --> 
+
+<footer> 
+
+  <p>Designed with ⚡ for <span>Michael Combrinck</span> · Belgium Campus · <span>2025</span></p> 
+
+  <p style="margin-top:.4rem;font-size:.7rem;opacity:.5">A university portfolio project — all facts sourced from the lecturer himself.</p> 
+
+</footer> 
+
+ 
+
+<script src="script.js"></script>
+
+</body> 
+
+</html> 
